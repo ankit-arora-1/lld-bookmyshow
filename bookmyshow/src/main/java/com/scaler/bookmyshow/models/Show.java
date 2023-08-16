@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "shows")
 public class Show extends BaseModel {
 
     @ManyToOne
@@ -19,5 +19,8 @@ public class Show extends BaseModel {
 
     @ManyToOne
     private Screen screen;
+
+    @Enumerated(EnumType.ORDINAL)
+    @ElementCollection
     private List<Feature> features;
 }

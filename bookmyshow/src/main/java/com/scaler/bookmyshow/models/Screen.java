@@ -14,5 +14,8 @@ public class Screen extends BaseModel {
 
     @OneToMany
     private List<Seat> seats;
+
+    @Enumerated(EnumType.ORDINAL)
+    @ElementCollection // -> Mapping table
     private List<Feature> features;
 }

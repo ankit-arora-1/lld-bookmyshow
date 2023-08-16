@@ -17,8 +17,3 @@ public class ShowSeatType extends BaseModel {
     private int price;
 }
 
-show_id seatype_id
-1         gold
-1         silver
-2         gold
-2         silver
